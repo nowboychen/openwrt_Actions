@@ -1,6 +1,11 @@
 name: OpenWrt-CI
 on:
-  release:
-    types: [published]
   watch:
     types: [started]  
+
+jobs:
+  build_openwrt:
+    name: Build OpenWrt firmware
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+steps:
