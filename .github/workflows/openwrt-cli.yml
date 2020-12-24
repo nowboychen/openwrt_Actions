@@ -1,0 +1,6 @@
+name: OpenWrt-CI
+on:
+  release:
+    types: [published]
+  watch:
+    types: [started]  
