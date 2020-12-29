@@ -20,7 +20,7 @@ jobs:
       - name: Space cleanup
         env: 
           DEBIAN_FRONTEND: noninteractive
-          run: |
+        run: |
             docker rmi `docker images -q`
             sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d
             sudo -E apt-get -y purge azure-cli ghc* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* mysql* php* android*
@@ -33,7 +33,7 @@ jobs:
         env: 
           REPO_URL: https://github.com/coolsnowwolf/lede
           REPO_BRANCH: master
-          run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
+        run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
        
       - name: Update & Install feeds
         working-directory: ./openwrt
