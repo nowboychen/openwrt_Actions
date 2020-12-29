@@ -3,7 +3,8 @@
 
 
 
-开始编译，可在Actions标签页进行查看--1）点击顶部star即可开始编译；2）也可进入Build_OP_x86_64.yml文件取消push branches maser前面#开始编译； 3）其他解锁编译由你来发现
+开始编译，可在Actions标签页进行查看-->点击顶部star即可开始编译；
+
 
 大功告成，下载固件---进入Actions标签页后，选择已完成的workflows后，在右方的Artifacts即可看到编译生成的固件
 
