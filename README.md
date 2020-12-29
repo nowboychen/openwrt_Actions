@@ -1,9 +1,7 @@
 操作步骤
 注册GitHub账号
 
-Fork此仓库源码 GitHub repository
 
-定制化固件---编辑x86_64.config Build_OP_x86_64.yml文件即可定制
 
 开始编译，可在Actions标签页进行查看--1）点击顶部star即可开始编译；2）也可进入Build_OP_x86_64.yml文件取消push branches maser前面#开始编译； 3）其他解锁编译由你来发现
 
