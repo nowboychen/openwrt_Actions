@@ -39,7 +39,10 @@ jobs:
           ./scripts/feeds install -a  
          
       - name: Generate configuration file
+        env:
+          CONFIG_FILE: 'rpi4.config'
         run: |
+          [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
           cd openwrt && make defconfig
          
       - name: Make download
