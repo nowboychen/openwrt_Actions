@@ -1,4 +1,4 @@
-name: OpenWrt-CI
+name: OpenWrt-rpi4
 
 on:
   release:
