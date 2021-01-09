@@ -41,7 +41,7 @@ jobs:
       - name: Import external feeds
         working-directory: ./openwrt
         run: |
-          git clone https://github.com/superstarfly/openwrt-package package/lienol
+          git clone --depth 1 https://github.com/superstarfly/openwrt-package package/lienol
          
       - name: Generate configuration file
         env:
