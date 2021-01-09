@@ -38,10 +38,10 @@ jobs:
           ./scripts/feeds update -a
           ./scripts/feeds install -a  
 
-      - name: Import external feeds
-        working-directory: ./openwrt
-        run: |
-          git clone --depth 1 https://github.com/superstarfly/openwrt-package package/lienol
+      # - name: Import external feeds
+        # working-directory: ./openwrt
+        # run: |
+          # git clone --depth 1 https://github.com/superstarfly/openwrt-package package/lienol
          
       - name: Generate configuration file
         env:
