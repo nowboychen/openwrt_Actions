@@ -12,4 +12,4 @@
 
 生成最新ipk---下载解压压缩包后，编译生成的最新ipk文件位于packages\x86_64目录下，请自寻查找
 
-OpenWrt默认lan IP： 192.168.5.1, 用户名 root，密码 password
+OpenWrt默认lan IP： 192.168.1.1, 用户名 root，密码 password
