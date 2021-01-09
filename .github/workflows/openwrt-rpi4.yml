@@ -38,10 +38,10 @@ jobs:
           ./scripts/feeds update -a
           ./scripts/feeds install -a  
 
-      # - name: Import external feeds
-        # working-directory: ./openwrt
-        # run: |
-          # git clone --depth 1 https://github.com/superstarfly/openwrt-package package/lienol
+      - name: Import external feeds
+        working-directory: ./openwrt
+        run: |
+          git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall package/lienol
          
       - name: Generate configuration file
         env:
@@ -64,5 +64,5 @@ jobs:
       - name : Upload artifact
         uses: actions/upload-artifact@master     #上传
         with:        
-          name: OpenWrt_rpi4b      
+          name: OpenWrt_rpi4p      
           path: openwrt/bin/targets
