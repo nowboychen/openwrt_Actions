@@ -64,5 +64,5 @@ jobs:
       - name : Upload artifact
         uses: actions/upload-artifact@master     #上传
         with:        
-          name: OpenWrt_rpi4      
+          name: OpenWrt_rpi4b      
           path: openwrt/bin/targets
