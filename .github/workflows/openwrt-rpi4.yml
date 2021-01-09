@@ -31,16 +31,17 @@ jobs:
           REPO_URL: https://github.com/coolsnowwolf/lede
           REPO_BRANCH: master
         run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
-       
-      # - name: Load custom feeds
-        # run: |
-          # chmod +x ./addpackages.sh && ./addpackages.sh
 
       - name: Update & Install feeds
         working-directory: ./openwrt
         run: |
           ./scripts/feeds update -a
           ./scripts/feeds install -a  
+
+      - name: Import external feeds
+        working-directory: ./openwrt
+        run: |
+          git clone https://github.com/superstarfly/openwrt-package package/lienol
          
       - name: Generate configuration file
         env:
