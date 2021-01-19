@@ -1,10 +1,10 @@
 name: OpenWrt-rpi4
 
 on:
-  release:
-    types: [published]
-  watch:
-    types: [started]  
+  # release:
+    # types: [published]
+  # watch:
+    # types: [started]  
 
 jobs:
   build_openwrt:
