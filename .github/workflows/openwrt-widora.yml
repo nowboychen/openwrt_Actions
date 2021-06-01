@@ -1,10 +1,10 @@
-name: OpenWrt-CI
+name: OpenWrt-widora
 
 on:
   # release:
     # types: [published]
-  watch:
-    types: [started]  
+  # watch:
+    # types: [started]  
 
 jobs:
   build_openwrt:
