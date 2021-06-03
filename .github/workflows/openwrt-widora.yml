@@ -35,7 +35,7 @@ jobs:
         
       - name: Adding a plug-in source
         run: |
-          chmod +x ./extend.sh && ./extend.sh
+          # chmod +x ./extend.sh && ./extend.sh
        
       - name: Update & Install feeds
         working-directory: ./openwrt
@@ -48,7 +48,7 @@ jobs:
           CONFIG_FILE: 'widora.config'
         run: |
           [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-          cat Extend.config >> openwrt/.config
+          # cat Extend.config >> openwrt/.config
           cd openwrt && make defconfig
          
       - name: Make download
