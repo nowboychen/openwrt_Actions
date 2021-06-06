@@ -64,12 +64,6 @@ jobs:
       - name : Upload artifact firmware
         uses: actions/upload-artifact@master     #上传
         with:        
-          name: Widora_firmware       
-          path: openwrt/bin/targets
-          
-      - name : Upload artifact Plug-in library
-        uses: actions/upload-artifact@master
-        with:
-          name: Widora_ Plug-in        
-          path: openwrt/bin/packages
+          name: Widora   
+          path: openwrt/bin
           
