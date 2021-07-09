@@ -3,8 +3,8 @@ name: OpenWrt-Widora
 on:
   # release:
     # types: [published]
-  watch:
-    types: [started]  
+  # watch:
+    # types: [started]  
 
 jobs:
   build_openwrt:
